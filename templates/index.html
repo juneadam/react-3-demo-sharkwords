@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+{% endblock head %} 
+
+{% block body %}
+  <h3>This is the Sharkwords application we will be building.</h3>
+  <div id="root"></div>
+
+  <script src="/static/js/sharkwords.jsx" type="text/jsx"></script>
+{% endblock %}

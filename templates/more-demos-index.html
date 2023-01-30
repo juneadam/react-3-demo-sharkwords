@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/styles.css" />
+{% endblock head %} 
+
+{% block body %}
+  <div class="text">
+    <ul id="demo-listing">
+      <li>
+        <a href="/more/sharkwords-class-components"> Sharkwords with Class Components </a>
+        <span class="description">
+          While React functional components with hooks are now the preferred way for writing
+          components, you may still find examples of class based components in older codebases and
+          examples. If you are interested in seeing how this would have been built using class based
+          components, you can look at this version.
+        </span>
+      </li>
+
+      <li>
+        <a href="/more/sharkwords-no-react"> Sharkwords without React </a>
+        <span class="description">
+          We already built Sharkwords without React but if you want a reminder of what this looked
+          like, click here
+        </span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}

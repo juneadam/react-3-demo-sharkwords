@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/styles.css" />
+{% endblock head %} 
+
+{% block body %}
+  <p id="info">
+    The code for this demo is located at
+    <cite>static/js/sharkwords-no-react.js</cite>
+  </p>
+  <div>
+    <section id="shark-img">
+      <img src="/static/images/guess0.png" />
+    </section>
+
+    <a id="play-again" style="display: none"> The shark got you! Click here to play again. </a>
+    <a id="win" style="display: none"> Congratulations! 🥳 You won! </a>
+
+    <section id="word-container"></section>
+    <section class="letter-buttons"></section>
+  </div>
+  <script src="/static/js/sharkwords-no-react.js"></script>
+{% endblock %}
